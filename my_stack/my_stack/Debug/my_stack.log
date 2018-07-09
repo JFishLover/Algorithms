@@ -1,0 +1,23 @@
+﻿生成启动时间为 2018/7/8/周日 16:12:11。
+     1>项目“D:\VS2010  WorkSpace\my_stack\my_stack\my_stack.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\my_stack.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stack.cpp
+         stack.cpp
+     1>d:\vs2010  workspace\my_stack\my_stack\stack.cpp(21): warning C4244: “return”: 从“double”转换到“int”，可能丢失数据
+     1>d:\vs2010  workspace\my_stack\my_stack\stack.cpp(30): warning C4244: “return”: 从“double”转换到“int”，可能丢失数据
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\VS2010  WorkSpace\my_stack\Debug\my_stack.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\my_stack.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\VS2010  WorkSpace\my_stack\Debug\my_stack.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\VS2010  WorkSpace\my_stack\Debug\my_stack.lib" /MACHINE:X86 Debug\stack.obj
+         LINK : 没有找到 D:\VS2010  WorkSpace\my_stack\Debug\my_stack.exe 或上一个增量链接没有生成它；正在执行完全链接
+         my_stack.vcxproj -> D:\VS2010  WorkSpace\my_stack\Debug\my_stack.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\VS2010  WorkSpace\my_stack\Debug\my_stack.exe;#1" /manifest Debug\my_stack.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Debug\my_stack.unsuccessfulbuild”。
+         正在对“Debug\my_stack.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\VS2010  WorkSpace\my_stack\my_stack\my_stack.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.73
