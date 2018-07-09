@@ -1,8 +1,8 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include<stdlib.h>
 
 using namespace std;
-//ÏßĞÔÊ±¼ä¼ÆÊıÅÅĞò£¬ºÜºÃÓÃ£¬µ«ÊÇÒªÇó±È½Ï¿Á¿Ì£¬ÒªÇóÈ¡Öµ·¶Î§Îª0-k£¬¶øÇÒk=O(a.length)£¬»¹ÊÇ¿ÉÒÔ¿¼ÂÇµÄ
+//çº¿æ€§æ—¶é—´è®¡æ•°æ’åºï¼Œå¾ˆå¥½ç”¨ï¼Œä½†æ˜¯è¦æ±‚æ¯”è¾ƒè‹›åˆ»ï¼Œè¦æ±‚å–å€¼èŒƒå›´ä¸º0-kï¼Œè€Œä¸”k=O(a.length)ï¼Œè¿˜æ˜¯å¯ä»¥è€ƒè™‘çš„
 void counting_Sort(int a[],int b[],int length,int k){
 	int *c=new int[k+1];
 	for(int i=0;i<k+1;++i){

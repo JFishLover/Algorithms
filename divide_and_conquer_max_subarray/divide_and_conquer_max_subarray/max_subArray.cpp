@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include<stdlib.h>
 #include<math.h>
 
@@ -8,12 +8,12 @@ struct Node{
 	int right;
 	int sum;
 };
-//ÕÒµ½¿çÔ½×óÓÒÁ½±ßµÄÁ¬Ğø×ÓÊı×éµÄ×î´óÖµ£¬·Ö±ğ´ÓmidÏò×óºÍÏòÓÒÕÒ£¬¼ÇÂ¼sumºÍÒÑÖªµÄ×î´óÖµ¡£
+//æ‰¾åˆ°è·¨è¶Šå·¦å³ä¸¤è¾¹çš„è¿ç»­å­æ•°ç»„çš„æœ€å¤§å€¼ï¼Œåˆ†åˆ«ä»midå‘å·¦å’Œå‘å³æ‰¾ï¼Œè®°å½•sumå’Œå·²çŸ¥çš„æœ€å¤§å€¼ã€‚
  Node find_max_crossing(int a[],int low,int mid,int high){
 	// cout<<"222222"<<endl;
 	//cout<<"left="<<low<<" and right="<<high<<endl;
-	int left_max=-pow(2.0,31);//×ó±ßµÄÈ·¶¨µÄ×î´óÖµ
-	int sum=0;//ÁÙÊ±µÄsum
+	int left_max=-pow(2.0,31);//å·¦è¾¹çš„ç¡®å®šçš„æœ€å¤§å€¼
+	int sum=0;//ä¸´æ—¶çš„sum
 	int left=mid+1;
 	for(int i=mid;i>=low;--i){
 		sum+=a[i];
@@ -68,7 +68,7 @@ struct Node{
 int main(){
 	int a[16]={13,-3,-25,20,-3,-16,-23,18,20,-7,12,-5,-22,15,-4,-7};
 	Node node=find_maximum_subArray(a,0,15);
-	cout<<"×î´óÁ¬Ğø×ÓÊı×éµÄºÍÎª:"<<node.sum<<endl<<"ÒÑ¾­¾­¹ı²âÊÔ£¬´ğ°¸ÕıÈ·"<<endl;
+	cout<<"æœ€å¤§è¿ç»­å­æ•°ç»„çš„å’Œä¸º:"<<node.sum<<endl<<"å·²ç»ç»è¿‡æµ‹è¯•ï¼Œç­”æ¡ˆæ­£ç¡®"<<endl;
 	cout<<"left="<<node.left<<endl;
 	cout<<"right="<<node.right<<endl;
 	system("pause");
