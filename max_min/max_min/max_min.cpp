@@ -1,8 +1,8 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include<stdlib.h>
 
 //using namespace std;
-//ÕÒµ½×îĞ¡ÖµºÍ×î´óÖµ£¬ÏÈÁ½Á½±È½Ï£¬Ğ¡µÄºÍmin±È½Ï£¬´óµÄºÍmax±È½Ï£¬Á½¸öÔªËØÖ»ĞèÒªÈı´Î±È½Ï
+//æ‰¾åˆ°æœ€å°å€¼å’Œæœ€å¤§å€¼ï¼Œå…ˆä¸¤ä¸¤æ¯”è¾ƒï¼Œå°çš„å’Œminæ¯”è¾ƒï¼Œå¤§çš„å’Œmaxæ¯”è¾ƒï¼Œä¸¤ä¸ªå…ƒç´ åªéœ€è¦ä¸‰æ¬¡æ¯”è¾ƒ
 int max,min;
 
 void max_min(int a[],int length){

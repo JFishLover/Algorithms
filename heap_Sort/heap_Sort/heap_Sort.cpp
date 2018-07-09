@@ -1,16 +1,16 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include<stdlib.h>
 
 using namespace std;
-//¶ÑÅÅĞòÖĞµÄ±êºÅÖ¸µÄ¶¼ÊÇÊı×éÏÂ±ê£¬½¨µÄ¶¼ÊÇ×î´ó¶Ñ
+//å †æ’åºä¸­çš„æ ‡å·æŒ‡çš„éƒ½æ˜¯æ•°ç»„ä¸‹æ ‡ï¼Œå»ºçš„éƒ½æ˜¯æœ€å¤§å †
 int heap_size;
-//Î¬»¤×î´ó¶ÑµÄĞÔÖÊ
+//ç»´æŠ¤æœ€å¤§å †çš„æ€§è´¨
 void max_heapify(int a[],int i){
 	//cout<<"33333"<<endl;
 	//cout<<"i="<<i<<endl;
 	int left=2*i+1;
 	int right=2*i+2;
-	int large_index=i;//ÕâÀïÍü¼Ç³õÊ¼»¯£¬±¨´í£¬¿ªÊ¼¸³ÖµÎªi£¬ÒªÊÇº¢×Ó½áµãÓĞ±ÈËû´óµÄ¾Í»áÖØĞÂ¸³Öµ£¬·ñÔò¾ÍÊÇi£¬²»»á½»»»¡£
+	int large_index=i;//è¿™é‡Œå¿˜è®°åˆå§‹åŒ–ï¼ŒæŠ¥é”™ï¼Œå¼€å§‹èµ‹å€¼ä¸ºiï¼Œè¦æ˜¯å­©å­ç»“ç‚¹æœ‰æ¯”ä»–å¤§çš„å°±ä¼šé‡æ–°èµ‹å€¼ï¼Œå¦åˆ™å°±æ˜¯iï¼Œä¸ä¼šäº¤æ¢ã€‚
 	if(left<heap_size&&a[left]>a[i]){
 		large_index=left;
 	}
@@ -21,11 +21,11 @@ void max_heapify(int a[],int i){
 		int temp=a[i];
 		a[i]=a[large_index];
 		a[large_index]=temp;
-		//µİ¹é
+		//é€’å½’
 		max_heapify(a,large_index);
 	}
 }
-//½¨Á¢×î´ó¶Ñ£¬ĞèÒª´Óµ×ÏòÉÏ½¨Á¢£¬È·±£a[0]ÊÇ×î´óµÄ
+//å»ºç«‹æœ€å¤§å †ï¼Œéœ€è¦ä»åº•å‘ä¸Šå»ºç«‹ï¼Œç¡®ä¿a[0]æ˜¯æœ€å¤§çš„
 void build_max_heap(int a[],int length){
 	//cout<<"22222"<<endl;
 
@@ -36,20 +36,20 @@ void build_max_heap(int a[],int length){
 		max_heapify(a,i);
 	}
 }
-//×î´ó¶ÑÅÅĞò
+//æœ€å¤§å †æ’åº
 void heap_Sort(int a[],int length){
-	//Êı×é´«µİ²ÎÊıÖ»ÊÇ´«µİÁËµÚÒ»¸öÔªËØµÄÖ¸Õë£¬ÒªÊÇĞèÒª³¤¶ÈµÄ»°ĞèÒª´«µİ²ÎÊı
+	//æ•°ç»„ä¼ é€’å‚æ•°åªæ˜¯ä¼ é€’äº†ç¬¬ä¸€ä¸ªå…ƒç´ çš„æŒ‡é’ˆï¼Œè¦æ˜¯éœ€è¦é•¿åº¦çš„è¯éœ€è¦ä¼ é€’å‚æ•°
 	//cout<<"11111"<<endl;
 	build_max_heap(a,length);	
 	int temp;
 	for(int i=length-1;i>=1;--i){
-		//ÏÈ½»»»
+		//å…ˆäº¤æ¢
 		temp=a[0];
 		a[0]=a[i];
 		a[i]=temp;
 
 		heap_size--;
-		//µİ¹é
+		//é€’å½’
 		max_heapify(a,0);
 	}
 }

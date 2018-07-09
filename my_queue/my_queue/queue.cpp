@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include<stdlib.h>
 #include<math.h>
 #define error -pow(2.0,31)
@@ -33,10 +33,10 @@ int main(){
 	queue.head=0;
 	queue.tail=0;
 	queue.length=100;
-	cout<<"¿ªÊ¼£º"<<endl;
+	cout<<"å¼€å§‹ï¼š"<<endl;
 	cout<<"queue.head="<<queue.head<<endl;
 	cout<<"queue.tail="<<queue.tail<<endl;
-	cout<<"Ñ¹Èë1ºÍ2"<<endl;
+	cout<<"åŽ‹å…¥1å’Œ2"<<endl;
 	enqueue(queue,1);
 	enqueue(queue,2);
 	cout<<"queue.head="<<queue.head<<endl;
@@ -46,7 +46,7 @@ int main(){
 	}
 	cout<<endl;
 	dequeue(queue);
-	cout<<"³öÀ´Ò»¸ö"<<endl;
+	cout<<"å‡ºæ¥ä¸€ä¸ª"<<endl;
 	cout<<"queue.head="<<queue.head<<endl;
 	cout<<"queue.tail="<<queue.tail<<endl;
 	for(int i=queue.head;i<queue.tail;++i){

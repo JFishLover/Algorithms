@@ -1,9 +1,9 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include<stdlib.h>
 
 using namespace std;
-//Ã»ÓÐÉÚ±øµÄË«ÏòÁ´±í
-//¾ªÁË£¬ÖÕÓÚ¶ÔÁË£¬Ö¸ÕëÇ§Íò²»ÒªÍ¼Ê¡ÊÂÓÃÏàÍ¬µÄÃû×Ö£¡£¡£¡£¡£¡£¡
+//æ²¡æœ‰å“¨å…µçš„åŒå‘é“¾è¡¨
+//æƒŠäº†ï¼Œç»ˆäºŽå¯¹äº†ï¼ŒæŒ‡é’ˆåƒä¸‡ä¸è¦å›¾çœäº‹ç”¨ç›¸åŒçš„åå­—ï¼ï¼ï¼ï¼ï¼ï¼
 struct Node{
 	Node *prev;
 	Node *next;
@@ -23,7 +23,7 @@ public:
 			node4=node4->next;
 		return node4;
 	}
-	//´«½øÀ´µÄ²ÎÊýÓ¦¸ÃÊÇÖ¸Õë£¬Ö¸ÕëÖ»ÄÜÓÃ->£¬²»ÄÜÓÃ.
+	//ä¼ è¿›æ¥çš„å‚æ•°åº”è¯¥æ˜¯æŒ‡é’ˆï¼ŒæŒ‡é’ˆåªèƒ½ç”¨->ï¼Œä¸èƒ½ç”¨.
 	void link_insert(Node * node){
 		node->next=head;
 		//cout<<"1111111111"<<endl;
@@ -53,30 +53,30 @@ int main(){;
 	Node * node1=new Node();
 	node->val=1;
 	linklist->link_insert(node);
-	cout<<"headÖ¸ÏòË­     ´ð°¸ÊÇ£º"<<linklist->head->val<<endl;
+	cout<<"headæŒ‡å‘è°     ç­”æ¡ˆæ˜¯ï¼š"<<linklist->head->val<<endl;
 	node1->val=2;
 	linklist->link_insert(node1);
 	Node *temp=linklist->head;
-	cout<<"headÖ¸ÏòË­     ´ð°¸ÊÇ£º"<<temp->val<<endl;
-	cout<<"²åÈëÁ½¸öÖµÖ®ºó£º"<<endl;
+	cout<<"headæŒ‡å‘è°     ç­”æ¡ˆæ˜¯ï¼š"<<temp->val<<endl;
+	cout<<"æ’å…¥ä¸¤ä¸ªå€¼ä¹‹åŽï¼š"<<endl;
 	while(temp!=NULL){
-		cout<<"½áµãµÄÖµÎª£º"<<temp->val<<endl;
+		cout<<"ç»“ç‚¹çš„å€¼ä¸ºï¼š"<<temp->val<<endl;
 		temp=temp->next;
 		//if(temp!=NULL)
 			//cout<<"22222222"<<endl;
 	}
 	int key=3;
-	cout<<"Ñ°ÕÒÖµÎª"<<key<<"µÄÔªËØ,ÏÂÒ»ÐÐÊÇ"<<key<<"¾Í¶ÔÁË£¬·ñÔò¾Í´íÁË"<<endl;
+	cout<<"å¯»æ‰¾å€¼ä¸º"<<key<<"çš„å…ƒç´ ,ä¸‹ä¸€è¡Œæ˜¯"<<key<<"å°±å¯¹äº†ï¼Œå¦åˆ™å°±é”™äº†"<<endl;
 	if(linklist->link_search(key)!=NULL)
 		cout<<linklist->link_search(key)->val<<endl;
 	else
-		cout<<"ÄúÒªÕÒµÄÔªËØÃ»ÓÐ°¡"<<endl;
-	cout<<"É¾³ýÒ»¸öÔªËØÖ®ºó£º"<<endl;
+		cout<<"æ‚¨è¦æ‰¾çš„å…ƒç´ æ²¡æœ‰å•Š"<<endl;
+	cout<<"åˆ é™¤ä¸€ä¸ªå…ƒç´ ä¹‹åŽï¼š"<<endl;
 	Node * node2=linklist->head;
 	linklist->link_delete(node2);
 	Node * node3=linklist->head;
 	while(node3!=NULL){
-		cout<<"½áµãµÄÖµÎª£º"<<node3->val<<endl;
+		cout<<"ç»“ç‚¹çš„å€¼ä¸ºï¼š"<<node3->val<<endl;
 		node3=node3->next;
 	}
 	system("pause");

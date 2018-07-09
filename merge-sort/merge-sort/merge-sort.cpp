@@ -1,9 +1,9 @@
-#include<stdlib.h>
+ï»¿#include<stdlib.h>
 #include<iostream>
 #include<math.h>
 using namespace std;
 
-//ºÏ²¢Ëã·¨£¬ĞÂ¿ª±ÙÁ½¸öÊı×é£¬ÉèÖÃÉÚ±ø£¬±È½Ï£¬²åÈë
+//åˆå¹¶ç®—æ³•ï¼Œæ–°å¼€è¾Ÿä¸¤ä¸ªæ•°ç»„ï¼Œè®¾ç½®å“¨å…µï¼Œæ¯”è¾ƒï¼Œæ’å…¥
 void merge(int a[],int p,int q,int r){
 	int n1=q-p+1;
 	int n2=r-q;
@@ -29,11 +29,11 @@ void merge(int a[],int p,int q,int r){
 	}
 }
 void merge_sort(int a[],int p,int r){
-	if(p<r){//Ö±µ½·Öµ½µ¥¸öÔªËØÎªÖ¹
+	if(p<r){//ç›´åˆ°åˆ†åˆ°å•ä¸ªå…ƒç´ ä¸ºæ­¢
 		int q=(p+r)/2;
 		merge_sort(a,p,q);
 		merge_sort(a,q+1,r);  
-		merge(a,p,q,r);//ºÏ²¢Ëã·¨
+		merge(a,p,q,r);//åˆå¹¶ç®—æ³•
 	}
 }
 int main(){

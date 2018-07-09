@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include<stdlib.h>
 #include<math.h>
 #define error -pow(2.0,31)
@@ -15,7 +15,7 @@ void max_heapify(int a[],int i){
 		max_index=right;
 	}	
 	if(max_index!=i){
-		//½»»»
+		//äº¤æ¢
 		int temp=a[i];
 		a[i]=a[max_index];
 		a[max_index]=temp;
@@ -23,7 +23,7 @@ void max_heapify(int a[],int i){
 		max_heapify(a,max_index);
 	}
 }
-//Õâ¸ö½ö½öÊÇÂú×ã×î´ó¶ÑµÄÒªÇó
+//è¿™ä¸ªä»…ä»…æ˜¯æ»¡è¶³æœ€å¤§å †çš„è¦æ±‚
 void build_max_heap(int a[],int length){
 	heap_size=length;
 	for(int i=length/2-1;i>=0;--i){
@@ -41,7 +41,7 @@ int heap_extract_max(int a[]){
 		int max=a[0];
 		a[0]=a[heap_size-1];
 		heap_size--;
-		//Î¬³Ö×î´ó¶ÑµÄ½á¹¹
+		//ç»´æŒæœ€å¤§å †çš„ç»“æ„
 		max_heapify(a,0);
 		return max;
 	}else{
@@ -57,7 +57,7 @@ int heap_increase_key(int a[],int i,int k){
 		int temp=a[(i-1)/2];
 		a[(i-1)/2]=a[i];
 		a[i]=temp;
-		//ÏòÉÏµü´ú£¬ÅĞ¶Ï¸¸½ÚµãµÄÊÇ·ñÂú×ã×î´ó¶ÑµÄÒªÇó
+		//å‘ä¸Šè¿­ä»£ï¼Œåˆ¤æ–­çˆ¶èŠ‚ç‚¹çš„æ˜¯å¦æ»¡è¶³æœ€å¤§å †çš„è¦æ±‚
 		i=(i-1)/2;
 	}
 	return 1;
@@ -70,26 +70,26 @@ void insert_heap(int a[],int key){
 int main(){
 	int a[12]={23,4,1,5,7,1,3,2,90,76,56,8};
 	build_max_heap(a,12);
-	cout<<"Ô­Ê¼µÄÓÅÏÈ¶ÓÁĞÔªËØÊÇ:"<<endl;
+	cout<<"åŸå§‹çš„ä¼˜å…ˆé˜Ÿåˆ—å…ƒç´ æ˜¯:"<<endl;
 	for(int i=0;i<12;i++){
 		cout<<a[i]<<" ";
 	}
 	cout<<endl;
-	cout<<"ÓÅÏÈ¶ÓÁĞ×î´óÔªËØÊÇ:"<<heap_maximum(a)<<endl;
+	cout<<"ä¼˜å…ˆé˜Ÿåˆ—æœ€å¤§å…ƒç´ æ˜¯:"<<heap_maximum(a)<<endl;
 	cout<<heap_extract_max(a);
-	cout<<"É¾³ı×î´óÔªËØÖ®ºó£º"<<endl;
+	cout<<"åˆ é™¤æœ€å¤§å…ƒç´ ä¹‹åï¼š"<<endl;
 	for(int i=0;i<11;i++){
 		cout<<a[i]<<" ";
 	}
 	cout<<endl;
 	heap_increase_key(a,10,100);
-	cout<<"Ä³¸öÔªËØÔö¼Óµ½100Ö®ºó£º"<<endl;
+	cout<<"æŸä¸ªå…ƒç´ å¢åŠ åˆ°100ä¹‹åï¼š"<<endl;
 	for(int i=0;i<11;i++){
 		cout<<a[i]<<" ";
 	}
 	cout<<endl;
 	insert_heap(a,900);
-	cout<<"²åÈëÒ»¸ö900µÄÔªËØÖ®ºó£º"<<endl;
+	cout<<"æ’å…¥ä¸€ä¸ª900çš„å…ƒç´ ä¹‹åï¼š"<<endl;
 	for(int i=0;i<12;i++){
 		cout<<a[i]<<" ";
 	}

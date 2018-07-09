@@ -1,11 +1,11 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include<stdlib.h>
 #include<math.h>
 using namespace std;
-//»ùÊıÅÅĞòÖĞÃ¿Ò»Î»ÓÃµ½µÄÅÅĞòËã·¨±ØĞëÊÇÎÈ¶¨µÄ£¬·ñÔòËã³öÀ´µÄ½á¹ûÊÇ²»¶ÔµÄ
+//åŸºæ•°æ’åºä¸­æ¯ä¸€ä½ç”¨åˆ°çš„æ’åºç®—æ³•å¿…é¡»æ˜¯ç¨³å®šçš„ï¼Œå¦åˆ™ç®—å‡ºæ¥çš„ç»“æœæ˜¯ä¸å¯¹çš„
 void radix_Sort(int a[],int length,int d){
 	for(int k=0;k<d;++k){
-		//ÄÚ²¿ÅÅĞòÓÃµÄ²åÈëÅÅĞò£¬ÎÈ¶¨£¬¼òµ¥
+		//å†…éƒ¨æ’åºç”¨çš„æ’å…¥æ’åºï¼Œç¨³å®šï¼Œç®€å•
 		for(int i=1;i<length;++i){
 			int key=a[i];
 			int key1=(int)(a[i]/pow(10.0,k))%10;

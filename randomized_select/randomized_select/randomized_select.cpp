@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include<stdlib.h>
 #include<time.h>
 
@@ -24,7 +24,7 @@ int randomized_partition(int a[],int p,int r){
 	a[r]=a[i+1];
 	a[i+1]=temp;
 	
-	//ÎÔ²Û£¬·µ»ØÖµÓ¦¸ÃÊÇÏÂ±ê£¬ÎÒTM¾ÓÈ»°ÑÔªËØÖµ·µ»ØÁË£¬¾ªÁË£¡£¡£¡£¡£¡£¡
+	//å§æ§½ï¼Œè¿”å›å€¼åº”è¯¥æ˜¯ä¸‹æ ‡ï¼Œæˆ‘TMå±…ç„¶æŠŠå…ƒç´ å€¼è¿”å›äº†ï¼ŒæƒŠäº†ï¼ï¼ï¼ï¼ï¼ï¼
 	return i+1;
 }
 int randomized_select(int a[],int p,int r,int i){
@@ -36,7 +36,7 @@ int randomized_select(int a[],int p,int r,int i){
 	//cout<<"q="<<q<<endl;
 	int count=q-p+1;
 	if(count==i){
-		//¾ªÁË£¬ÎÒÄáÂêÅÂÊÇ¸öÖÇÕÏ£¬·µ»ØµÄÓ¦¸ÃÊÇpivotÕâ¸öÔªËØ°¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¬ÎÒÄáÂê£¬ÎÒ¾ÓÈ»Ğ´µÄa[i]
+		//æƒŠäº†ï¼Œæˆ‘å°¼ç›æ€•æ˜¯ä¸ªæ™ºéšœï¼Œè¿”å›çš„åº”è¯¥æ˜¯pivotè¿™ä¸ªå…ƒç´ å•Šï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼Œæˆ‘å°¼ç›ï¼Œæˆ‘å±…ç„¶å†™çš„a[i]
 		return a[q];
 	}else if(count>i){
 		return randomized_select(a,p,q-1,i);

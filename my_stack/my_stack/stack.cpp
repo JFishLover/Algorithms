@@ -1,10 +1,10 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include<stdlib.h>
 #include<math.h>
 #define error -pow(2.0,31)
 using namespace std;
 
-//Õğ¾ª£¬ÒıÓÃ¶¼Íü¼ÇÁË£¡
+//éœ‡æƒŠï¼Œå¼•ç”¨éƒ½å¿˜è®°äº†ï¼
 struct Stack{
 	int a[100];
 	int top;
@@ -36,35 +36,35 @@ int main(){
 	stack.top=-1;
 	stack.capicity=100;
 	cout<<"top="<<stack.top<<endl;
-	cout<<"¸Õ¿ªÊ¼:"<<endl;
+	cout<<"åˆšå¼€å§‹:"<<endl;
 	if(stack_empty(stack))
-		cout<<"É¶Ò²Ã»ÓĞ¹ş¹ş¹ş"<<endl;
+		cout<<"å•¥ä¹Ÿæ²¡æœ‰å“ˆå“ˆå“ˆ"<<endl;
 	else{
-		cout<<"ÏÖÔÚÕ»ÖĞÓĞÕâ¼¸¸öÔªËØ£º"<<endl;
+		cout<<"ç°åœ¨æ ˆä¸­æœ‰è¿™å‡ ä¸ªå…ƒç´ ï¼š"<<endl;
 		for(int i=0;i<=stack.top;i++){
 			cout<<stack.a[stack.top]<<" ";
 		}
 		cout<<endl;
 	}
-	cout<<"½ÓÏÂÀ´·Å½øÈ¥1¡¢2ºÍ3¡£¡£¡£"<<endl;
+	cout<<"æ¥ä¸‹æ¥æ”¾è¿›å»1ã€2å’Œ3ã€‚ã€‚ã€‚"<<endl;
 	stack_push(stack,1);
 	stack_push(stack,2);
 	stack_push(stack,3 );
 	if(stack_empty(stack))
-		cout<<"É¶Ò²Ã»ÓĞ¹ş¹ş¹ş"<<endl;
+		cout<<"å•¥ä¹Ÿæ²¡æœ‰å“ˆå“ˆå“ˆ"<<endl;
 	else{
-		cout<<"ÏÖÔÚÕ»ÖĞÓĞÕâ¼¸¸öÔªËØ£º"<<endl;
+		cout<<"ç°åœ¨æ ˆä¸­æœ‰è¿™å‡ ä¸ªå…ƒç´ ï¼š"<<endl;
 		for(int i=0;i<=stack.top;i++){
 			cout<<stack.a[i]<<" ";
 		}
 		cout<<endl;
 	}
-	cout<<"µ¯³öÒ»¸öÔªËØ"<<endl;
+	cout<<"å¼¹å‡ºä¸€ä¸ªå…ƒç´ "<<endl;
 	stack_pop(stack);
 	if(stack_empty(stack))
-		cout<<"É¶Ò²Ã»ÓĞ¹ş¹ş¹ş"<<endl;
+		cout<<"å•¥ä¹Ÿæ²¡æœ‰å“ˆå“ˆå“ˆ"<<endl;
 	else{
-		cout<<"ÏÖÔÚÕ»ÖĞÓĞÕâ¼¸¸öÔªËØ£º"<<endl;
+		cout<<"ç°åœ¨æ ˆä¸­æœ‰è¿™å‡ ä¸ªå…ƒç´ ï¼š"<<endl;
 		for(int i=0;i<=stack.top;i++){
 			cout<<stack.a[i]<<" ";
 		}
