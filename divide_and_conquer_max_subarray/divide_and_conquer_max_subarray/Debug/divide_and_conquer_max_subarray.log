@@ -1,0 +1,23 @@
+﻿生成启动时间为 2018/7/5/周四 23:11:55。
+     1>项目“D:\VS2010  WorkSpace\divide_and_conquer_max_subarray\divide_and_conquer_max_subarray\divide_and_conquer_max_subarray.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\divide_and_conquer_max_subarray.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt max_subArray.cpp
+         max_subArray.cpp
+     1>d:\vs2010  workspace\divide_and_conquer_max_subarray\divide_and_conquer_max_subarray\max_subarray.cpp(14): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\vs2010  workspace\divide_and_conquer_max_subarray\divide_and_conquer_max_subarray\max_subarray.cpp(24): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\VS2010  WorkSpace\divide_and_conquer_max_subarray\Debug\divide_and_conquer_max_subarray.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\divide_and_conquer_max_subarray.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\VS2010  WorkSpace\divide_and_conquer_max_subarray\Debug\divide_and_conquer_max_subarray.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\VS2010  WorkSpace\divide_and_conquer_max_subarray\Debug\divide_and_conquer_max_subarray.lib" /MACHINE:X86 Debug\max_subArray.obj
+         LINK : 没有找到 D:\VS2010  WorkSpace\divide_and_conquer_max_subarray\Debug\divide_and_conquer_max_subarray.exe 或上一个增量链接没有生成它；正在执行完全链接
+         divide_and_conquer_max_subarray.vcxproj -> D:\VS2010  WorkSpace\divide_and_conquer_max_subarray\Debug\divide_and_conquer_max_subarray.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\VS2010  WorkSpace\divide_and_conquer_max_subarray\Debug\divide_and_conquer_max_subarray.exe;#1" /manifest Debug\divide_and_conquer_max_subarray.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Debug\divide_and_conquer_max_subarray.unsuccessfulbuild”。
+         正在对“Debug\divide_and_conquer_max_subarray.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\VS2010  WorkSpace\divide_and_conquer_max_subarray\divide_and_conquer_max_subarray\divide_and_conquer_max_subarray.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.01
