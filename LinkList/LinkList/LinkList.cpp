@@ -53,7 +53,7 @@ int main(){;
 	Node * node1=new Node();
 	node->val=1;
 	linklist->link_insert(node);
-	cout<<"head指向谁     答案是："<<linklist->head->val<<endl;
+	cout<<"head指向谁   答案是："<<linklist->head->val<<endl;
 	node1->val=2;
 	linklist->link_insert(node1);
 	Node *temp=linklist->head;
