@@ -54,12 +54,41 @@ int bottom_Up_Cut_Rod(int p[],int n){
 	}
 	return r[n];
 }
+//扩展的自底向上方法，同时存储每个最优解的切割点
+void extended_Bottom_Up_Cut_Rod(int p[],int r[],int s[],int n){
+	r[0]=0;
+	for(int i=1;i<=n;++i){
+		int q=-1;
+		for(int j=1;j<=i;++j){
+			if(q<p[j]+r[i-j]){
+				q=p[j]+r[i-j];
+				s[i]=j;
+			}
+		}
+		r[i]=q;
+	}
 
+}
+void print_Cut_Rod_Solution(int p[],int r[],int s[],int n){
+	extended_Bottom_Up_Cut_Rod(p,r,s,n);
+	cout<<"扩展的自底向上方法求得的最优解的最大利润是："<<r[n]<<endl;
+	cout<<"钢条切割的方法是：";
+	while(n>0){
+		cout<<s[n]<<" ";
+		n=n-s[n];
+	}
+	//迭代，用剩余的长度作为迭代变量
+	cout<<endl;
+}
 int main(){
 	int p[11]={0,1,5,8,9,10,17,17,20,24,30};
+	int r[11];//存储最优解的利润
+	int s[11];//存储每个长度的钢管对应的最优解的第一次切割长度，迭代可输出所有的长度
 	cout<<"简单递归求解："<<cut_Rod(p,7)<<endl;
 	cout<<"带备忘录的自顶向下方法求解:"<<memoized_Cut_Rod(p,7)<<endl;
 	cout<<"自底向上方法求解："<<bottom_Up_Cut_Rod(p,7)<<endl;
+	cout<<"扩展的自底向上方法求解："<<endl;
+	print_Cut_Rod_Solution(p,r,s,7);
 	cout<<"一遍成功哈哈哈"<<endl;
 	system("pause");
 	return 0;
