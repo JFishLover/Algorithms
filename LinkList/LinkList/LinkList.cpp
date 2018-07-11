@@ -62,6 +62,8 @@ int main(){;
 	while(temp!=NULL){
 		cout<<"结点的值为："<<temp->val<<endl;
 		temp=temp->next;
+		
+		
 		//if(temp!=NULL)
 			//cout<<"22222222"<<endl;
 	}
