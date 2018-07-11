@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include<stdlib.h>
 
 using namespace std;
@@ -38,7 +38,7 @@ int main(){
 	Matrix_Chain_Order(p,7,m,s);
 	print_Parens(s,1,6);
 	cout<<endl;
-	cout<<"¾ØÕóÁ´µÄ×îÐ¡³Ë·¨´ÎÊýÊÇ£º"<<endl;
+	cout<<"çŸ©é˜µé“¾çš„æœ€å°ä¹˜æ³•æ¬¡æ•°æ˜¯ï¼š"<<endl;
 	cout<<m[1][6]<<endl;
 	system("pause");
 	return 0;
