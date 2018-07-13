@@ -1,0 +1,33 @@
+﻿生成启动时间为 2018/7/13/周五 10:03:12。
+     1>项目“D:\VS2010  WorkSpace\Dynamic_Prog_Optimal_BST\Dynamic_Prog_Optimal_BST\Dynamic_Prog_Optimal_BST.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\Dynamic_Prog_Optimal_BST.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt optimal_BST.cpp
+         optimal_BST.cpp
+     1>d:\vs2010  workspace\dynamic_prog_optimal_bst\dynamic_prog_optimal_bst\optimal_bst.cpp(14): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\vs2010  workspace\dynamic_prog_optimal_bst\dynamic_prog_optimal_bst\optimal_bst.cpp(27): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\vs2010  workspace\dynamic_prog_optimal_bst\dynamic_prog_optimal_bst\optimal_bst.cpp(27): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\vs2010  workspace\dynamic_prog_optimal_bst\dynamic_prog_optimal_bst\optimal_bst.cpp(27): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\vs2010  workspace\dynamic_prog_optimal_bst\dynamic_prog_optimal_bst\optimal_bst.cpp(27): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\vs2010  workspace\dynamic_prog_optimal_bst\dynamic_prog_optimal_bst\optimal_bst.cpp(27): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\vs2010  workspace\dynamic_prog_optimal_bst\dynamic_prog_optimal_bst\optimal_bst.cpp(28): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\vs2010  workspace\dynamic_prog_optimal_bst\dynamic_prog_optimal_bst\optimal_bst.cpp(28): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\vs2010  workspace\dynamic_prog_optimal_bst\dynamic_prog_optimal_bst\optimal_bst.cpp(28): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\vs2010  workspace\dynamic_prog_optimal_bst\dynamic_prog_optimal_bst\optimal_bst.cpp(28): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\vs2010  workspace\dynamic_prog_optimal_bst\dynamic_prog_optimal_bst\optimal_bst.cpp(28): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\vs2010  workspace\dynamic_prog_optimal_bst\dynamic_prog_optimal_bst\optimal_bst.cpp(28): warning C4305: “初始化”: 从“double”到“float”截断
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\VS2010  WorkSpace\Dynamic_Prog_Optimal_BST\Debug\Dynamic_Prog_Optimal_BST.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Dynamic_Prog_Optimal_BST.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\VS2010  WorkSpace\Dynamic_Prog_Optimal_BST\Debug\Dynamic_Prog_Optimal_BST.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\VS2010  WorkSpace\Dynamic_Prog_Optimal_BST\Debug\Dynamic_Prog_Optimal_BST.lib" /MACHINE:X86 Debug\optimal_BST.obj
+         LINK : 没有找到 D:\VS2010  WorkSpace\Dynamic_Prog_Optimal_BST\Debug\Dynamic_Prog_Optimal_BST.exe 或上一个增量链接没有生成它；正在执行完全链接
+         Dynamic_Prog_Optimal_BST.vcxproj -> D:\VS2010  WorkSpace\Dynamic_Prog_Optimal_BST\Debug\Dynamic_Prog_Optimal_BST.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\VS2010  WorkSpace\Dynamic_Prog_Optimal_BST\Debug\Dynamic_Prog_Optimal_BST.exe;#1" /manifest Debug\Dynamic_Prog_Optimal_BST.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Debug\Dynamic_Prog_Optimal_BST.unsuccessfulbuild”。
+         正在对“Debug\Dynamic_Prog_Optimal_BST.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\VS2010  WorkSpace\Dynamic_Prog_Optimal_BST\Dynamic_Prog_Optimal_BST\Dynamic_Prog_Optimal_BST.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.81
